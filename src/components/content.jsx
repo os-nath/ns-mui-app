@@ -39,7 +39,6 @@ export default function Album() {
         </Toolbar>
       </AppBar>
       <main>
-        {/* Hero unit */}
         <Box
           sx={{
             bgcolor: "#F1EFF2",
@@ -47,7 +46,7 @@ export default function Album() {
             pb: 6,
           }}
         >
-          <Container maxWidth="30%">
+          <Container maxWidth="50%">
             <Typography
               component="h1"
               variant="h2"
@@ -85,7 +84,7 @@ export default function Album() {
         </Box>
 
         <Container sx={{ py: 8, bgcolor: "#F1EFF2" }} maxWidth="100%">
-          {/* End hero unit */}
+      
           <Grid container spacing={4}>
             {cards.map((card) => (
               <Grid item key={card} xs={12} sm={6} md={4}>
