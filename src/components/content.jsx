@@ -83,7 +83,7 @@ export default function Album() {
           </Container>
         </Box>
 
-        <Container sx={{ py: 8, bgcolor: "#F1EFF2" }} maxWidth="100%">
+        <Container sx={{ py: 8, bgcolor: "#F1EFF2" }} maxWidth="100%" height="100%">
       
           <Grid container spacing={4}>
             {cards.map((card) => (
