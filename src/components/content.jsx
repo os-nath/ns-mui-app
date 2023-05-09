@@ -14,7 +14,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
-import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const cards = [1, 2, 3, 4, 5, 6];
 
@@ -54,12 +54,11 @@ export default function Album() {
               color="text.primary"
               gutterBottom
             >
-              Minha React App
+              Oi, Nath!
             </Typography>
             <Typography variant="h5" align="center" color="#009739" paragraph>
-              Something short and leading about the collection below—its
-              contents, the creator, etc. Make it short and sweet, but not too
-              short so folks don&apos;t simply skip over it entirely.
+              Dinos and Horses will always be around - connected to the earth
+              and skies. Have you noticed this?
             </Typography>
             <Stack
               sx={{ pt: 4 }}
@@ -83,8 +82,11 @@ export default function Album() {
           </Container>
         </Box>
 
-        <Container sx={{ py: 8, bgcolor: "#F1EFF2" }} maxWidth="100%" height="100%">
-      
+        <Container
+          sx={{ py: 8, bgcolor: "#F1EFF2" }}
+          maxWidth="100%"
+          height="100%"
+        >
           <Grid container spacing={4}>
             {cards.map((card) => (
               <Grid item key={card} xs={12} sm={6} md={4}>

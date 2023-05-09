@@ -1,8 +1,8 @@
 import React from "react";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
-import Link from "@mui/material/Link";
-import Grid from "@mui/material/Unstable_Grid2";
+import { Box, Grid, ListItemButton } from "@mui/material";
+import { Link } from "react-router-dom";
+
+import "../css/footer.css";
 
 // function Copyright() {
 //   return (
@@ -17,18 +17,48 @@ import Grid from "@mui/material/Unstable_Grid2";
 //   );
 // }
 
-export default function Footer() {
+export default function Footer({ isCollapsed, sidersize }) {
+  var marginsidersize = parseInt(sidersize) + 40;
+
   return (
-    <Box sx={{ bgcolor: "#F1EFF2", p: 2 }}>
-      <Grid
-        container
-        sx={{
-          fontSize: "0.8em",
-          fontWeight: 700,
-          textAlign: "left",
-        }}
-      >
-        <Grid xs={2} xl={2.5}>
+    <Box
+      className="footer"
+      sx={{ width: `calc(100% - ${sidersize}px)`, left: marginsidersize }}
+    >
+      <Grid container>
+        <ListItemButton
+          className="footerItems"
+          // to={"/Support"}
+          // component={Link}
+        >
+          {"Nathasha"}
+        </ListItemButton>
+
+        <ListItemButton
+          className="footerItems"
+          // to={"/Support"}
+          // component={Link}
+        >
+          {"Support"}
+        </ListItemButton>
+
+        <ListItemButton
+          className="footerItems"
+          // to={"/Support"}
+          // component={Link}
+        >
+          {"Help"}
+        </ListItemButton>
+
+        <ListItemButton
+          className="footerItems"
+          // to={"/Support"}
+          // component={Link}
+        >
+          {"Center"}
+        </ListItemButton>
+
+        {/* <Grid xs={2} xl={2.5}>
           Support
         </Grid>
         <Grid xs={2} xl={2.5}>
@@ -39,12 +69,13 @@ export default function Footer() {
         </Grid>
         <Grid xs={2} xl={2.5}>
           Terms of Service
-        </Grid>
-        <Grid xs={4} xl={4} sx={{ textAlign: "right" }}>
+        </Grid> */}
+
+        <Box className="footerItemsNonClickable">
           <span>
             {"MinhaReactApp"} &copy; {new Date().getFullYear()} {"made in AUS"}
           </span>
-        </Grid>
+        </Box>
       </Grid>
     </Box>
   );
