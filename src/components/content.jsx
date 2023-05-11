@@ -54,7 +54,7 @@ export default function Album() {
               color="text.primary"
               gutterBottom
             >
-              Oi, Nath!
+              Oi, você!-
             </Typography>
             <Typography variant="h5" align="center" color="#009739" paragraph>
               Dinos and Horses will always be around - connected to the earth
